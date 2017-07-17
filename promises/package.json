@@ -5,16 +5,21 @@
   "main": "movie-search.js",
   "scripts": {
     "test": "VCR_MODE=record mocha test.js",
-    "test:record": "VCR_MODE=playback npm test"
+    "test:record": "VCR_MODE=playback npm test",
+    "start": "nodemon ./movie-search-promises.js"
   },
   "author": "Patrick Porche <pporche87@gmail.com> (http://pporche87.com/)",
   "license": "MIT",
   "dependencies": {
     "chai": "^4.0.2",
     "cheerio": "^1.0.0-rc.2",
+    "express": "^4.15.3",
     "mocha": "^3.4.2",
     "request": "^2.81.0",
     "request-promise": "^4.2.1",
     "sepia": "^2.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }
